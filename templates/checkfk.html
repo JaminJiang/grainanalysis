@@ -1,0 +1,16 @@
+$def with(fkcontent)
+
+        <table border="1" align = center>
+            <tr>
+                <th>序号</th>
+                <th>时间</th>
+                <th>反馈内容</th>            
+            </tr>
+            $for item in fkcontent:
+            <tr>
+                <td id="tdstyle">$item.id</td>
+                <td id="tdstyle">$item.time</td>
+                <td id="tdstyle">$item.fk_content</td>
+                
+            </tr>
+        </table>
