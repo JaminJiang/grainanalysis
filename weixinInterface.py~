@@ -37,7 +37,7 @@ class WeixinInterface:
                 fktime = time.strftime('%Y-%m-%d %H:%M',time.localtime())        
                 model.addfk(fromUser,fktime,content[3:].encode('utf-8'))        
                 return self.render.reply_text(fromUser,toUser,int(time.time()),u'感谢您的反馈')
-            else 
+            else :
                 return self.render.reply_text(fromUser,toUser,int(time.time()),'echo: '+content)
 
     def GET(self):
