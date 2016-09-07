@@ -6,6 +6,7 @@ import time
 import os
 import urllib2,json
 from lxml import etree
+import model
 
 class WeixinInterface:
 
