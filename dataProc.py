@@ -5,7 +5,6 @@ def readpos_neg():
     filepath=files[0]
     generatedate=filepath[5:15]
     fr=open(filepath,'r')
-    date=
     dataMat=[]
     for line in fr.readlines():
         curLine=line.strip().split('\t')
