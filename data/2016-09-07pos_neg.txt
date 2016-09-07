@@ -1,0 +1,6 @@
+http://www.chinagrain.cn/zonglvyou/2016/9/7/20169710223224930.shtml	5.621836	pos
+http://www.chinagrain.cn/liangyou/2016/9/5/20169513582448889.shtml	5.421309	pos
+http://www.chinagrain.cn/xiaomai/2016/6/7/2016671017294535.shtml	4.815829	pos
+http://www.chinagrain.cn/caiyou/2016/9/7/20169711153339235.shtml	-0.534972	neg
+http://www.chinagrain.cn/	-0.251314	neg
+http://www.chinagrain.cn/biz/20164/201642815112829970.html	0.303898	neg

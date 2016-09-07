@@ -4,11 +4,12 @@ import os
 import sae
 import web
 import model
- 
+import dataProc
 from weixinInterface import WeixinInterface
  
 urls = (
 '/', 'Hello',
+'/recommendPosNeg', 'recommendPosNeg',
 '/weixin','WeixinInterface',
 '/ck','feedback',
 )
@@ -21,6 +22,12 @@ class Hello:
     def GET(self):
     #print "你好"
         return render.hello("你好")
+    
+class recommendPosNeg:
+    def GET(self):
+    #print "你好"
+        poss,negs,generatedate=dataProc.readpos_neg()
+        return render.recommendPosNeg(poss,negs,generatedate)
     
 class feedback:
     def GET(self):
