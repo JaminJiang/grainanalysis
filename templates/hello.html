@@ -1,4 +1,4 @@
-$def with(name)
+$def with(poss,negs)
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,8 +8,16 @@ $def with(name)
 <body>
 
 <h1>This is homepage of Grain Analysis.</h1>
-<p>$name，欢迎您访问粮油市场挖掘.</p>
+<p>欢迎您访问粮油市场挖掘.</p>
+<ul>
+<p>利好消息:</p>
+$for pos in poss:
+    <li>$pos[0] $pos[1] $pos[2]</li>
+<p>利空消息:</p>
+$for neg in negs:
+    <li>$neg[0] $neg[1] $neg[2]</li>
 
+</ul>
 </body>
 </html>
 
